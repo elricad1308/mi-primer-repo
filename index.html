@@ -4,17 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container mt-5">
     <form action="">
-        Nombre:
-        <input type="text"><br>
-        Apellido paterno:
-        <input type="text"><br>
-        Apellido materno:
-        <input type="text"><br>
-        Estado:
-        <select name="state" id="state">
+        <div class="row mb-2 mb-md-4">
+            <div class="col-12 col-md-4 text-md-end">
+                <label
+                  class="form-label text-md-end" 
+                  for="inp-nombre">Nombre:</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input 
+                  id="inp-nombre"
+                  type="text"
+                  class="form-control">
+            </div>
+        </div> <!-- .row -->
+
+        <div class="row mb-2 mb-md-4">
+            <div class="col-12 col-md-4 text-md-end">
+                <label 
+                  class="form-label"
+                  for="inp-paterno">Apellido paterno:</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input 
+                  class="form-control"
+                  id="inp-paterno" type="text">
+            </div>
+        </div> <!-- .row -->
+        <div class="row mb-2 mb-md-4">
+            <div class="col-12 col-md-4 text-md-end">
+                <label
+                class="form-label"
+                for="inp-materno">Apellido materno:</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input
+                class="form-control"
+                id="inp-materno" type="text">
+            </div>
+        </div>
+        
+       <div class="row mb-1 mb-md-2"> 
+        <div class="col-6 col-md-4 text-md-end">
+            <label for="state" class="form-label">Estado:</label>
+        </div>
+        <div class="col-12 col-md-8">
+        <select class="form-control"> 
+            <option value ></option>
             <option value="Aguascalientes">Aguascalientes</option>
             <option value="Baja California">Baja California</option>
             <option value="Baja California Sur">Baja California Sur</option>
@@ -45,8 +85,11 @@
             <option value="Tlaxcala">Tlaxcala</option>
             <option value="Veracruz">Veracruz</option>
             <option value="Yucatán">Yucatán</option>
-            <option value="Zacatecas">Zacatecas</option>
-        </select><br>
+            <option value="Zacatecas">Zacatecas</option></select> 
+        </div>
+    </div><!--row-->
+
+       
         Sexo
         Hombre:
         <input type="radio">
@@ -59,5 +102,6 @@
         <button>Guardar</button>
         <button>Cancelar</button>
     </form>
+</div>
 </body>
 </html>

@@ -89,19 +89,41 @@
         </div>
     </div><!--row-->
 
-       
-        Sexo
-        Hombre:
-        <input type="radio">
-        Mujer:
-        <input type="radio">
-        Otro:
-        <input type="radio"><br>
-        <input type="checkbox">
-        Acepto los términos y condiciones<br>
-        <button>Guardar</button>
-        <button>Cancelar</button>
-    </form>
+    <div class="row mb-3">
+        <div class="col-12 col-md-4 text-md-end">
+            <label class="form-label">Sexo:</label>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-between">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Sexo" id="Sexo-Masculino">
+                <label class="form-check-label" for="Sexo-Masculino">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Sexo" id="Sexo-Femenino">
+                <label class="form-check-label" for="Sexo-Femenino">Femenino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Sexo" id="Sexo-otro">
+                <label class="form-check-label" for="Sexo-otro">Otro</label>
+            </div>
+        </div>
+    </div><!--row-->
+
+    <div class="row mb-4 justify-content-center">
+        <div class="col-12 col-md-8 d-flex justify-content-center">
+            <input class="form-check-input" type="checkbox" id="terminos">
+            <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+        </div>
+    </div><!--row-->
+    <div class="row mb-4 justify-content-center">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-secondary">Cancelar</button>
+        </div>
+    </div>
+</form>
 </div>
 </body>
 </html>

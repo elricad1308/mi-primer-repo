@@ -1,107 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"><!--JJLC-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Formulario Responsivo</title>
     <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFE5B4; /* Color de fondo naranja suave */
+        }
+        .container {
+            max-width: 600px; 
+            margin: auto; 
+            background-color: #fff; 
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .text-md-end {
+                text-align: left !important;
+                margin-bottom: 0.5rem;
+            }
+            .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
-    <form action="">
-        <div class="row mb-2 mb-md-4">
-            <div class="col-12 col-md-4 text-md-end">
-                <label
-                  class="form-label text-md-end" 
-                  for="inp-nombre">Nombre:</label>
-            </div>
-            <div class="col-12 col-md-8">
-                <input 
-                  id="inp-nombre"
-                  type="text"
-                  class="form-control">
-            </div>
-        </div> <!-- .row -->
+        <form action="">
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 text-md-end">
+                    <label class="form-label" for="inp-nombre">Nombres:</label>
+                </div>
+                <div class="col-12 col-md-8">
+                    <input id="inp-nombre" name="nombre" type="text" class="form-control" required>
+                </div>
+            </div><!--row-->
 
-        <div class="row mb-2 mb-md-4">
-            <div class="col-12 col-md-4 text-md-end">
-                <label 
-                  class="form-label"
-                  for="inp-paterno">Apellido paterno:</label>
-            </div>
-            <div class="col-12 col-md-8">
-                <input 
-                  class="form-control"
-                  id="inp-paterno" type="text">
-            </div>
-        </div> <!-- .row -->
-        <div class="row mb-2 mb-md-4">
-            <div class="col-12 col-md-4 text-md-end">
-                <label
-                class="form-label"
-                for="inp-materno">Apellido materno:</label>
-            </div>
-            <div class="col-12 col-md-8">
-                <input
-                class="form-control"
-                id="inp-materno" type="text">
-            </div>
-        </div>
-        
-       <div class="row mb-1 mb-md-2"> 
-        <div class="col-6 col-md-4 text-md-end">
-            <label for="state" class="form-label">Estado:</label>
-        </div>
-        <div class="col-12 col-md-8">
-        <select class="form-control"> 
-            <option value ></option>
-            <option value="Aguascalientes">Aguascalientes</option>
-            <option value="Baja California">Baja California</option>
-            <option value="Baja California Sur">Baja California Sur</option>
-            <option value="Campeche">Campeche</option>
-            <option value="Chiapas">Chiapas</option>
-            <option value="Chihuahua">Chihuahua</option>
-            <option value="Coahuila">Coahuila</option>
-            <option value="Colima">Colima</option>
-            <option value="Durango">Durango</option>
-            <option value="Guanajuato">Guanajuato</option>
-            <option value="Guerrero">Guerrero</option>
-            <option value="Hidalgo">Hidalgo</option>
-            <option value="Jalisco">Jalisco</option>
-            <option value="México">México</option>
-            <option value="Michoacán">Michoacán</option>
-            <option value="Morelos">Morelos</option>
-            <option value="Nayarit">Nayarit</option>
-            <option value="Nuevo León">Nuevo León</option>
-            <option value="Oaxaca">Oaxaca</option>
-            <option value="Puebla">Puebla</option>
-            <option value="Querétaro">Querétaro</option>
-            <option value="Quintana Roo">Quintana Roo</option>
-            <option value="San Luis Potosí">San Luis Potosí</option>
-            <option value="Sinaloa">Sinaloa</option>
-            <option value="Sonora">Sonora</option>
-            <option value="Tabasco">Tabasco</option>
-            <option value="Tamaulipas">Tamaulipas</option>
-            <option value="Tlaxcala">Tlaxcala</option>
-            <option value="Veracruz">Veracruz</option>
-            <option value="Yucatán">Yucatán</option>
-            <option value="Zacatecas">Zacatecas</option></select> 
-        </div>
-    </div><!--row-->
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 text-md-end">
+                    <label class="form-label" for="inp-paterno">Apellido paterno:</label>
+                </div>
+                <div class="col-12 col-md-8">
+                    <input class="form-control" id="inp-paterno" name="paterno" type="text" required>
+                </div>
+            </div><!--row-->
 
-       
-        Sexo
-        Hombre:
-        <input type="radio">
-        Mujer:
-        <input type="radio">
-        Otro:
-        <input type="radio"><br>
-        <input type="checkbox">
-        Acepto los términos y condiciones<br>
-        <button>Guardar</button>
-        <button>Cancelar</button>
-    </form>
-</div>
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 text-md-end">
+                    <label class="form-label" for="inp-materno">Apellido materno:</label>
+                </div>
+                <div class="col-12 col-md-8">
+                    <input class="form-control" id="inp-materno" name="materno" type="text" required>
+                </div>
+            </div><!--row-->
+
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 text-md-end">
+                    <label class="form-label" for="state">Estado:</label>
+                </div>
+                <div class="col-12 col-md-8">
+                    <select class="form-control" id="state" name="estado" required>
+                        <option value="">--Seleccione su Estado--</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="México">México</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                </div>
+            </div><!--row-->
+
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 text-md-end">
+                    <label class="form-label">Genero:</label>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Genero" id="Genero-Masculino" value="Masculino" required>
+                        <label class="form-check-label" for="Genero-Masculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Genero" id="Genero-Femenino" value="Femenino">
+                        <label class="form-check-label" for="Genero-Femenino">Femenino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Genero" id="Genero-otro" value="Otro">
+                        <label class="form-check-label" for="Genero-otro">Otro</label>
+                    </div>
+                </div>
+            </div><!--row-->
+
+            <div class="row mb-4 justify-content-center">
+                <div class="col-12 col-md-8 d-flex justify-content-center">
+                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                    <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                </div>
+            </div><!--row-->
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--script src="scripts/bootstrap.min.js"></script-->
 </body>
 </html>

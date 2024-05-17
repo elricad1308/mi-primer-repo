@@ -5,56 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
     <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="container mt-5">
-    <form action="">
-        <div class="row mb-2 mb-md-4">
-            <div class="col-12 col-md-4 text-md-end">
-                <label
-                  class="form-label text-md-end" 
-                  for="inp-nombre">Nombre:</label>
-            </div>
-            <div class="col-12 col-md-8">
-                <input 
-                  id="inp-nombre"
-                  type="text"
-                  class="form-control">
-            </div>
-        </div> <!-- .row -->
 
-        <div class="row mb-2 mb-md-4">
-            <div class="col-12 col-md-4 text-md-end">
-                <label 
-                  class="form-label"
-                  for="inp-paterno">Apellido paterno:</label>
-            </div>
-            <div class="col-12 col-md-8">
-                <input 
-                  class="form-control"
-                  id="inp-paterno" type="text">
-            </div>
-        </div> <!-- .row -->
-        <div class="row mb-2 mb-md-4">
-            <div class="col-12 col-md-4 text-md-end">
-                <label
-                class="form-label"
-                for="inp-materno">Apellido materno:</label>
-            </div>
-            <div class="col-12 col-md-8">
-                <input
-                class="form-control"
-                id="inp-materno" type="text">
-            </div>
-        </div>
-        
-       <div class="row mb-1 mb-md-2"> 
-        <div class="col-6 col-md-4 text-md-end">
-            <label for="state" class="form-label">Estado:</label>
-        </div>
-        <div class="col-12 col-md-8">
-        <select class="form-control"> 
-            <option value ></option>
+<div class="container">
+
+    <form action="">
+        <label for="" class="text-start">Formulario:</label>
+
+        <br>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">Nombre:</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">Apellido paterno:</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="">
+            <label for="floatingInput">Apellido materno:</label>
+          </div>
+          <select class="form-select" aria-label="Default select example">
+
+            <option selected>Seleccione su estado</option>
             <option value="Aguascalientes">Aguascalientes</option>
             <option value="Baja California">Baja California</option>
             <option value="Baja California Sur">Baja California Sur</option>
@@ -85,23 +61,51 @@
             <option value="Tlaxcala">Tlaxcala</option>
             <option value="Veracruz">Veracruz</option>
             <option value="Yucatán">Yucatán</option>
-            <option value="Zacatecas">Zacatecas</option></select> 
-        </div>
-    </div><!--row-->
+            <option value="Zacatecas">Zacatecas</option>
 
-       
-        Sexo
-        Hombre:
-        <input type="radio">
-        Mujer:
-        <input type="radio">
-        Otro:
-        <input type="radio"><br>
-        <input type="checkbox">
-        Acepto los términos y condiciones<br>
-        <button>Guardar</button>
-        <button>Cancelar</button>
+          </select>
+          
+          <br>
+
+          <label for="checked" class="text-start">Sexo:</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="hombre">
+            <label class="form-check-label" for="exampleRadios1">
+              Hombre
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="mujer">
+            <label class="form-check-label" for="exampleRadios2">
+              Mujer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="otro">
+            <label class="form-check-label" for="exampleRadios2">
+              Otro
+            </label>
+          </div>
+
+          <br>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Aceto los terminos y condiciones
+            </label>
+
+            <br>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">Cancelar</button>
+                <button class="btn btn-primary" type="submit">Aceptar</button>
+              </div>
+
     </form>
+
 </div>
+
 </body>
 </html>

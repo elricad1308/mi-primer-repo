@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    
+    <style>
+        body{
+            background-color: rgb(102, 153, 207);
+            background: linear-gradient(to right, #393ea6, rgb(102, 153, 207));
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-secondary p-3 mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col-md-8">
+                <form action="">
+                    <div class="row mb-3">    
+                                
+           
+                       <label for="inp-nombre" class="col-md-4 col-form-label text-md-end">Nombre:</label>
+                       <div class="col-md-8">
+                           <input id="inp-nombre" type="text" class="form-control" required
+                           placeholder="Escribe tu Nombre">
+                       </div>
+                   </div>                    
+                   <div class="row mb-3">
+                       <label for="inp-paterno" class="col-md-4 col-form-label text-md-end">Apellido paterno:</label>
+                       <div class="col-md-8">
+                           <input id="inp-paterno" type="text" class="form-control" required
+                           placeholder="Escribe tu apellido">
+                           </div>
+                       </div>
+           
+                       <div class="row mb-3">
+                           <label for="inp-materno" class="col-md-4 col-form-label text-md-end">Apellido materno:</label>
+                           <div class="col-md-8">
+                               <input id="inp-materno" type="text" class="form-control" required
+                               placeholder="Escribe tu apellido">
+                           </div>
+                       </div>
+           
+                       <div class="row mb-3">
+                           <label for="state" class="col-md-4 col-form-label text-md-end">Estado:</label>
+                           <div class="col-md-8">
+                               <select id="state" class="form-select" required>
+                                   <option value="">Selecciona un estado</option>
+                                   <option value="">Campeche</option>
+                                   <option value="">...</option>
+                                   
+                               </select>
+                           </div>
+                       </div>
+                       
+                       <div class="row mb-3">
+                           <div class="col-md-4 col-form-label text-md-end">Sexo:</div>
+                           <div class="col-md-8">
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="radio" name="sexo" id="sexo-hombre" required>
+                                   <label class="form-check-label" for="sexo-hombre">Hombre</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="radio" name="sexo" id="sexo-mujer" required>
+                                   <label class="form-check-label" for="sexo-mujer">Mujer</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="radio" name="sexo" id="sexo-otro" required>
+                                   <label class="form-check-label" for="sexo-otro">Otro</label>
+                               </div>
+                           </div>
+                       </div>
+           
+                       <div class="row mb-3">
+                           <div class="col-md-8 offset-md-4 text-center">
+                               <div class="form-check">
+                                   <input class="form-check-input" type="checkbox" id="check-terminos" required>
+                                   <label class="form-check-label" for="check-terminos">Acepto los términos y condiciones</label>
+                               </div>
+                           </div>
+                       </div>
+           
+                       <div class="row">
+                           <div class="col-md-8 offset-md-4 text-center">
+                           <button type="button" class="btn btn-success">Enviar</button>
+                          <button type="button" class="btn btn-danger">Cancelar</button>
+                          </div> 
+                      </div>
+                   </form>        
+               </div>
+        </div>
+           <script src="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        </div>
+</body>
+</html>

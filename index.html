@@ -9,6 +9,23 @@
 <body>
     <div class="container mt-5">
     <form action="">
+
+        <div class="row mb-2 mb-md-4">
+            <div class="col-12 col-md-4 text-md-end">
+                <label
+                  class="form-label text-md-end" 
+                  for="inp-id">ID:</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input 
+                  id="inp-id"
+                  type="text"
+                  class="form-control"
+                  value="1"
+                  disabled>
+            </div>
+        </div>
+
         <div class="row mb-2 mb-md-4">
             <div class="col-12 col-md-4 text-md-end">
                 <label
@@ -89,18 +106,39 @@
         </div>
     </div><!--row-->
 
-       
-        Sexo
-        Hombre:
-        <input type="radio">
-        Mujer:
-        <input type="radio">
-        Otro:
-        <input type="radio"><br>
-        <input type="checkbox">
-        Acepto los términos y condiciones<br>
-        <button id="btn-guardar">Guardar</button>
-        <button id="btn-cancelar">Cancelar</button>
+    <div class="row mt-3 mb-1 mb-md-2">
+        <div class="col-12">
+            <span class="form-check-label">Sexo</span>
+            <div class="form-check form-check-inline">
+                <label for="Hombre" class="form-check-label">Hombre</label>
+                <input type="radio" class="form-check-input">
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="Hombre" class="form-check-label">Mujer</label>
+                <input type="radio" class="form-check-input">
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="Hombre" class="form-check-label">Otro</label>
+                <input type="radio" class="form-check-input">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-1 mb-md-2 mt-5">
+        <div class="col-12">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="acepto" class="form-check-label">Acepto los términos y condiciones</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-12 text-center">
+            <button class="btn btn-success">Aceptar</button>
+            <button class="btn btn-danger">Cancelar</button>
+        </div>
+    </div>
     </form>
 </div>
 <script src="scripts/index.js"></script>
